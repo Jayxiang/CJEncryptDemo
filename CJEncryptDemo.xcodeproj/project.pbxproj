@@ -13,6 +13,16 @@
 		A7539A8820847DE700EF1FE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7539A8720847DE700EF1FE2 /* Assets.xcassets */; };
 		A7539A8B20847DE700EF1FE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7539A8920847DE700EF1FE2 /* LaunchScreen.storyboard */; };
 		A7539A8E20847DE800EF1FE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7539A8D20847DE800EF1FE2 /* main.m */; };
+		A7539A9F2084818100EF1FE2 /* Encrypt_3DES.m in Sources */ = {isa = PBXBuildFile; fileRef = A7539A982084818100EF1FE2 /* Encrypt_3DES.m */; };
+		A7539AA02084818100EF1FE2 /* Encrypt_AES.m in Sources */ = {isa = PBXBuildFile; fileRef = A7539A9A2084818100EF1FE2 /* Encrypt_AES.m */; };
+		A7539AA12084818100EF1FE2 /* RSAOC.m in Sources */ = {isa = PBXBuildFile; fileRef = A7539A9B2084818100EF1FE2 /* RSAOC.m */; };
+		A7539AA22084818100EF1FE2 /* Encrypt_MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = A7539A9C2084818100EF1FE2 /* Encrypt_MD5.m */; };
+		A7539AA32084818100EF1FE2 /* Encrypt_RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = A7539A9E2084818100EF1FE2 /* Encrypt_RSA.m */; };
+		A7DA97782090284B00C14C50 /* rsa_private_key.p12 in Resources */ = {isa = PBXBuildFile; fileRef = A7DA97732090284A00C14C50 /* rsa_private_key.p12 */; };
+		A7DA97792090284B00C14C50 /* rsa_public_key.der in Resources */ = {isa = PBXBuildFile; fileRef = A7DA97742090284A00C14C50 /* rsa_public_key.der */; };
+		A7DA977A2090284B00C14C50 /* rsa_public_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = A7DA97752090284A00C14C50 /* rsa_public_key.pem */; };
+		A7DA977B2090284B00C14C50 /* rsa_private_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = A7DA97762090284A00C14C50 /* rsa_private_key.pem */; };
+		A7DA977C2090284B00C14C50 /* rsaCert.crt in Resources */ = {isa = PBXBuildFile; fileRef = A7DA97772090284B00C14C50 /* rsaCert.crt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +36,22 @@
 		A7539A8A20847DE700EF1FE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7539A8C20847DE800EF1FE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7539A8D20847DE800EF1FE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A7539A952084818100EF1FE2 /* Encrypt_RSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Encrypt_RSA.h; sourceTree = "<group>"; };
+		A7539A962084818100EF1FE2 /* RSAOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAOC.h; sourceTree = "<group>"; };
+		A7539A972084818100EF1FE2 /* Encrypt_MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Encrypt_MD5.h; sourceTree = "<group>"; };
+		A7539A982084818100EF1FE2 /* Encrypt_3DES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Encrypt_3DES.m; sourceTree = "<group>"; };
+		A7539A992084818100EF1FE2 /* Encrypt_AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Encrypt_AES.h; sourceTree = "<group>"; };
+		A7539A9A2084818100EF1FE2 /* Encrypt_AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Encrypt_AES.m; sourceTree = "<group>"; };
+		A7539A9B2084818100EF1FE2 /* RSAOC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAOC.m; sourceTree = "<group>"; };
+		A7539A9C2084818100EF1FE2 /* Encrypt_MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Encrypt_MD5.m; sourceTree = "<group>"; };
+		A7539A9D2084818100EF1FE2 /* Encrypt_3DES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Encrypt_3DES.h; sourceTree = "<group>"; };
+		A7539A9E2084818100EF1FE2 /* Encrypt_RSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Encrypt_RSA.m; sourceTree = "<group>"; };
+		A7539AA5208481C800EF1FE2 /* CJEncryptHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJEncryptHeader.h; sourceTree = "<group>"; };
+		A7DA97732090284A00C14C50 /* rsa_private_key.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = rsa_private_key.p12; sourceTree = "<group>"; };
+		A7DA97742090284A00C14C50 /* rsa_public_key.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = rsa_public_key.der; sourceTree = "<group>"; };
+		A7DA97752090284A00C14C50 /* rsa_public_key.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa_public_key.pem; sourceTree = "<group>"; };
+		A7DA97762090284A00C14C50 /* rsa_private_key.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa_private_key.pem; sourceTree = "<group>"; };
+		A7DA97772090284B00C14C50 /* rsaCert.crt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsaCert.crt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +84,8 @@
 		A7539A7D20847DE600EF1FE2 /* CJEncryptDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A7DA97722090278800C14C50 /* Files */,
+				A7539A942084812C00EF1FE2 /* CJEncrypt */,
 				A7539A7E20847DE600EF1FE2 /* AppDelegate.h */,
 				A7539A7F20847DE600EF1FE2 /* AppDelegate.m */,
 				A7539A8120847DE600EF1FE2 /* ViewController.h */,
@@ -69,6 +97,36 @@
 				A7539A8D20847DE800EF1FE2 /* main.m */,
 			);
 			path = CJEncryptDemo;
+			sourceTree = "<group>";
+		};
+		A7539A942084812C00EF1FE2 /* CJEncrypt */ = {
+			isa = PBXGroup;
+			children = (
+				A7539A9D2084818100EF1FE2 /* Encrypt_3DES.h */,
+				A7539A982084818100EF1FE2 /* Encrypt_3DES.m */,
+				A7539A992084818100EF1FE2 /* Encrypt_AES.h */,
+				A7539A9A2084818100EF1FE2 /* Encrypt_AES.m */,
+				A7539A972084818100EF1FE2 /* Encrypt_MD5.h */,
+				A7539A9C2084818100EF1FE2 /* Encrypt_MD5.m */,
+				A7539A952084818100EF1FE2 /* Encrypt_RSA.h */,
+				A7539A9E2084818100EF1FE2 /* Encrypt_RSA.m */,
+				A7539A962084818100EF1FE2 /* RSAOC.h */,
+				A7539A9B2084818100EF1FE2 /* RSAOC.m */,
+				A7539AA5208481C800EF1FE2 /* CJEncryptHeader.h */,
+			);
+			path = CJEncrypt;
+			sourceTree = "<group>";
+		};
+		A7DA97722090278800C14C50 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				A7DA97732090284A00C14C50 /* rsa_private_key.p12 */,
+				A7DA97762090284A00C14C50 /* rsa_private_key.pem */,
+				A7DA97742090284A00C14C50 /* rsa_public_key.der */,
+				A7DA97752090284A00C14C50 /* rsa_public_key.pem */,
+				A7DA97772090284B00C14C50 /* rsaCert.crt */,
+			);
+			path = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,8 +186,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7DA977A2090284B00C14C50 /* rsa_public_key.pem in Resources */,
+				A7DA97782090284B00C14C50 /* rsa_private_key.p12 in Resources */,
+				A7DA977B2090284B00C14C50 /* rsa_private_key.pem in Resources */,
+				A7DA97792090284B00C14C50 /* rsa_public_key.der in Resources */,
 				A7539A8B20847DE700EF1FE2 /* LaunchScreen.storyboard in Resources */,
 				A7539A8820847DE700EF1FE2 /* Assets.xcassets in Resources */,
+				A7DA977C2090284B00C14C50 /* rsaCert.crt in Resources */,
 				A7539A8620847DE600EF1FE2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,8 +204,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7539AA12084818100EF1FE2 /* RSAOC.m in Sources */,
+				A7539A9F2084818100EF1FE2 /* Encrypt_3DES.m in Sources */,
+				A7539AA32084818100EF1FE2 /* Encrypt_RSA.m in Sources */,
 				A7539A8320847DE600EF1FE2 /* ViewController.m in Sources */,
+				A7539AA22084818100EF1FE2 /* Encrypt_MD5.m in Sources */,
 				A7539A8E20847DE800EF1FE2 /* main.m in Sources */,
+				A7539AA02084818100EF1FE2 /* Encrypt_AES.m in Sources */,
 				A7539A8020847DE600EF1FE2 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

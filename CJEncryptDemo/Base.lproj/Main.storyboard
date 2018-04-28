@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,111 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Mz-U5-xMR">
+                                <rect key="frame" x="16" y="154" width="44" height="30"/>
+                                <color key="backgroundColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="6cX-nf-SIH"/>
+                                </constraints>
+                                <state key="normal" title="MD5">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="encryptMD5Click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gKf-vU-RbW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbC-3Q-P7G">
+                                <rect key="frame" x="298" y="154" width="60" height="30"/>
+                                <color key="backgroundColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                                <state key="normal" title="RSA加签">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hwy-EI-yn3"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="需要加密字符" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MzK-AA-0aF">
+                                <rect key="frame" x="50" y="79" width="273" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="结果:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXV-ye-lWd">
+                                <rect key="frame" x="16" y="219" width="342" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6A-jV-CCa">
+                                <rect key="frame" x="70" y="154" width="44" height="30"/>
+                                <color key="backgroundColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                                <state key="normal" title="3DES">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="encrypt3DesClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EnY-Pz-mwN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jr2-aE-zmO">
+                                <rect key="frame" x="124" y="154" width="44" height="30"/>
+                                <color key="backgroundColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                                <state key="normal" title="AES">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="encryptAesClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zDv-q3-CNj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xiK-3q-myV">
+                                <rect key="frame" x="178" y="154" width="44" height="30"/>
+                                <color key="backgroundColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                                <state key="normal" title="RSA">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="encryptRsaClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j06-HH-OuQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Jr2-aE-zmO" firstAttribute="width" secondItem="Z6A-jV-CCa" secondAttribute="width" id="0lA-mf-QOJ"/>
+                            <constraint firstItem="Z6A-jV-CCa" firstAttribute="width" secondItem="8Mz-U5-xMR" secondAttribute="width" id="1KL-7b-j3z"/>
+                            <constraint firstItem="Jr2-aE-zmO" firstAttribute="centerY" secondItem="Z6A-jV-CCa" secondAttribute="centerY" id="9nT-nN-vVC"/>
+                            <constraint firstItem="fbC-3Q-P7G" firstAttribute="leading" relation="lessThanOrEqual" secondItem="xiK-3q-myV" secondAttribute="trailing" constant="76" id="BdI-Zt-WPx"/>
+                            <constraint firstItem="Z6A-jV-CCa" firstAttribute="leading" secondItem="8Mz-U5-xMR" secondAttribute="trailing" constant="10" id="C01-NN-JFm"/>
+                            <constraint firstItem="sXV-ye-lWd" firstAttribute="top" secondItem="8Mz-U5-xMR" secondAttribute="bottom" constant="35" id="FEE-Or-a8x"/>
+                            <constraint firstItem="8Mz-U5-xMR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="QIa-Ej-gLW"/>
+                            <constraint firstItem="xiK-3q-myV" firstAttribute="width" secondItem="Jr2-aE-zmO" secondAttribute="width" id="ShA-Iu-vdr"/>
+                            <constraint firstItem="Z6A-jV-CCa" firstAttribute="centerY" secondItem="8Mz-U5-xMR" secondAttribute="centerY" id="VJ8-bj-Vr3"/>
+                            <constraint firstItem="xiK-3q-myV" firstAttribute="centerY" secondItem="Jr2-aE-zmO" secondAttribute="centerY" id="Y09-D4-bqO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MzK-AA-0aF" secondAttribute="trailing" constant="52" id="aI9-IA-LE6"/>
+                            <constraint firstItem="Jr2-aE-zmO" firstAttribute="leading" secondItem="Z6A-jV-CCa" secondAttribute="trailing" constant="10" id="aLi-w1-G02"/>
+                            <constraint firstItem="MzK-AA-0aF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="59" id="b41-Me-g41"/>
+                            <constraint firstItem="xiK-3q-myV" firstAttribute="leading" secondItem="Jr2-aE-zmO" secondAttribute="trailing" constant="10" id="cRS-or-Xk7"/>
+                            <constraint firstItem="fbC-3Q-P7G" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="cpO-5l-6s1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sXV-ye-lWd" secondAttribute="trailing" constant="17" id="dza-YT-20l"/>
+                            <constraint firstItem="fbC-3Q-P7G" firstAttribute="top" secondItem="MzK-AA-0aF" secondAttribute="bottom" constant="45" id="kAA-EF-dtF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fbC-3Q-P7G" secondAttribute="trailing" constant="17" id="osR-Vc-JEb"/>
+                            <constraint firstItem="sXV-ye-lWd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="rw7-9x-9eb"/>
+                            <constraint firstItem="8Mz-U5-xMR" firstAttribute="top" secondItem="MzK-AA-0aF" secondAttribute="bottom" constant="45" id="tKO-VS-YZm"/>
+                            <constraint firstItem="MzK-AA-0aF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="xQ2-ZT-eBH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="backLabel" destination="sXV-ye-lWd" id="7kG-qP-LZi"/>
+                        <outlet property="encryptText" destination="MzK-AA-0aF" id="zht-zM-SgU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>
